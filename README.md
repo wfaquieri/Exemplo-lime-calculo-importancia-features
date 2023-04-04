@@ -15,6 +15,7 @@
 LIME significa *Local Interpretable Model-agnostic Explanations* e é uma técnica que pode ser usada para explicar como um modelo de machine learning tomou suas decisões. Ele não se concentra em calcular a importância relativa de cada recurso, mas em explicar como cada recurso influenciou a previsão do modelo para uma observação específica.
 
 ```python
+# Importando as bibliotecas necessárias
 import lime
 import lime.lime_tabular
 import numpy as np
