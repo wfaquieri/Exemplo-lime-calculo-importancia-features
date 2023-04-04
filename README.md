@@ -10,18 +10,17 @@
 
 ---
 
-> Nesse exemplo, criamos um modelo simples que classifica os pacientes com base em sua idade, e criamos uma nova amostra com a idade alterada em 2 anos. Em seguida, usamos o LIME para explicar a importância da idade na previsão do modelo, calculando a derivada parcial da previsão do modelo em relação à idade.
-
 ### Mas, afinal, o que é o LIME?
 
 LIME significa *Local Interpretable Model-agnostic Explanations* e é uma técnica que pode ser usada para explicar como um modelo de machine learning tomou suas decisões. Ele não se concentra em calcular a importância relativa de cada recurso, mas em explicar como cada recurso influenciou a previsão do modelo para uma observação específica.
-
 
 ```python
 import lime
 import lime.lime_tabular
 import numpy as np
 ```
+
+> Nesse exemplo, criamos um modelo simples que classifica os pacientes com base em sua idade, e criamos uma nova amostra com a idade alterada em 2 anos. Em seguida, usamos o LIME para explicar a importância da idade na previsão do modelo, calculando a derivada parcial da previsão do modelo em relação à idade.
 
 
 ```python
