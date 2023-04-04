@@ -4,7 +4,6 @@
 
 
 
-
 ---
 
 **Objetivo**: Desenvolver um modelo de machine learning que classifica se um paciente tem ou não uma determinada doença, com base em suas características, como idade, gênero, histórico médico, resultados de testes etc. Queremos usar o LIME para explicar por que o modelo classificou um determinado paciente como tendo a doença.
