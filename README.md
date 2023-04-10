@@ -77,7 +77,7 @@ print('A importância da idade é:', age_importance)
     A importância da idade é: -0.46388716808645064
     
 
-> O valor de -0.46546278875695796 é a derivada parcial da previsão do modelo em relação à idade. Tal resultado mostra a importância da idade para a previsão do modelo. Esse valor pode ser usado para identificar as características mais importantes para o modelo, ajudando a entender como o modelo toma suas decisões.
+O valor de -0.46546278875695796 é a derivada parcial da previsão do modelo em relação à idade. Tal resultado mostra a importância da idade para a previsão do modelo. Esse valor pode ser usado para identificar as características mais importantes para o modelo, ajudando a entender como o modelo toma suas decisões.
 
 ### Entendendo a diferença entre o LIME e o SHAP values
 
