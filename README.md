@@ -59,6 +59,7 @@ age_importance = exp.as_list()[0][1]
 
 exp.as_list()
 ```
+- lista de importâncias retornada pelo LIME:
 
     [('idade', -0.46546278875695796),
      ('sexo', 0.0136130475168977),
