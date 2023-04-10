@@ -1,6 +1,6 @@
-## Explicando as previsões de um modelo com LIME: um exemplo de cálculo de importância de características
+## Explicando as previsões de um modelo com LIME: um exemplo de cálculo de importância de features
 
-- Projeto: Análise de importância de características em modelo de classificação com LIME
+- Projeto: Análise de importância de atributos em modelo de classificação com LIME
 
 
 
@@ -21,7 +21,7 @@ import lime.lime_tabular
 import numpy as np
 ```
 
-> Nesse exemplo, criamos um modelo simples que classifica os pacientes com base em sua idade, e criamos uma nova amostra com a idade alterada em 2 anos. Em seguida, usamos o LIME para explicar a importância da idade na previsão do modelo, calculando a derivada parcial da previsão do modelo em relação à idade.
+Nesse exemplo, criamos um modelo simples que classifica os pacientes com base em sua idade, e criamos uma nova amostra com a idade alterada em 2 anos. Em seguida, usamos o LIME para explicar a importância da idade na previsão do modelo, calculando a derivada parcial da previsão do modelo em relação à idade.
 
 
 ```python
@@ -47,7 +47,7 @@ original_preds = predict_fn(data)
 new_preds = predict_fn(new_data)
 ```
 
-> A linha exp = explainer.explain_instance(new_data[0], predict_fn, num_features=5) calcula a importância das cinco características mais relevantes na previsão do modelo para a nova amostra. A linha age_importance = exp.as_list()[0][1] obtém a importância da idade a partir da lista de importâncias retornada pelo LIME.
+A linha exp = explainer.explain_instance(new_data[0], predict_fn, num_features=5) calcula a importância dos cinco atributos ou features mais relevantes na previsão do modelo para a nova amostra. A linha age_importance = exp.as_list()[0][1] obtém a importância da idade a partir da lista de importâncias retornada pelo LIME.
 
 
 ```python
@@ -83,7 +83,7 @@ print('A importância da idade é:', age_importance)
 
 O LIME (Local Interpretable Model-Agnostic Explanations) e o SHAP (SHapley Additive exPlanations) são duas técnicas de interpretabilidade de modelos de machine learning que ajudam a entender as decisões tomadas por esses modelos.
 
-A principal diferença entre o LIME e o SHAP é que o LIME é um método local de interpretação, enquanto o SHAP é um método global de interpretação.
+> A principal diferença entre o LIME e o SHAP é que o LIME é um método local de interpretação, enquanto o SHAP é um método global de interpretação.
 
 O LIME fornece uma explicação local para uma única previsão, ou seja, ele explica por que um modelo de machine learning tomou uma determinada decisão para um caso específico. Para fazer isso, o LIME cria um modelo explicativo mais simples e interpreta o comportamento desse modelo em torno do ponto de interesse.
 
