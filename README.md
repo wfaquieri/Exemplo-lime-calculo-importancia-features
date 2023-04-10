@@ -60,9 +60,6 @@ age_importance = exp.as_list()[0][1]
 exp.as_list()
 ```
 
-
-
-
     [('idade', -0.46546278875695796),
      ('sexo', 0.0136130475168977),
      ('glicemia', -0.005174571831061595),
@@ -81,3 +78,15 @@ print('A importância da idade é:', age_importance)
     
 
 > O valor de -0.46546278875695796 é a derivada parcial da previsão do modelo em relação à idade. Tal resultado mostra a importância da idade para a previsão do modelo. Esse valor pode ser usado para identificar as características mais importantes para o modelo, ajudando a entender como o modelo toma suas decisões.
+
+### Entendendo a diferença entre o LIME e o SHAP values
+
+O LIME (Local Interpretable Model-Agnostic Explanations) e o SHAP (SHapley Additive exPlanations) são duas técnicas de interpretabilidade de modelos de machine learning que ajudam a entender as decisões tomadas por esses modelos.
+
+A principal diferença entre o LIME e o SHAP é que o LIME é um método local de interpretação, enquanto o SHAP é um método global de interpretação.
+
+O LIME fornece uma explicação local para uma única previsão, ou seja, ele explica por que um modelo de machine learning tomou uma determinada decisão para um caso específico. Para fazer isso, o LIME cria um modelo explicativo mais simples e interpreta o comportamento desse modelo em torno do ponto de interesse.
+
+Já o SHAP é uma técnica global de interpretação, que fornece uma explicação para todo o modelo, explicando a contribuição relativa de cada variável para as previsões do modelo. O SHAP usa a teoria dos jogos para atribuir um valor a cada feature, representando a contribuição de cada feature na previsão do modelo.
+
+Em resumo, enquanto o LIME fornece uma explicação local para uma única previsão, o SHAP fornece uma explicação global para todo o modelo, mostrando a importância relativa de cada variável. Ambas as técnicas têm suas próprias vantagens e desvantagens, e o uso depende do objetivo e da natureza do problema em questão.
